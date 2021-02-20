@@ -54,7 +54,7 @@ public class Student {
         int soLuongMonHoc = 0;
         float tongDiem = 0;
         for(Subject subject : subjects) {
-            soLuongMonHoc++;
+            soLuongMonHoc+= subject.getAmountOfCredits();
             tongDiem += subject.getPoint();
         }
         return tongDiem / soLuongMonHoc;
